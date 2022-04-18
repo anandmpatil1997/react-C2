@@ -5,7 +5,7 @@
   width: 60%;
 }
 #system {
-  color: silver;
+  color: rgb(192, 192, 192);
   text-shadow: 0px 0px 7px;
   font-size: xx-large;
 }
@@ -22,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,6 @@ button {
   font-size: calc(10px + 2vmin);
 }
 .togglebtn {
-  color: silver;
+  color: white;
   text-shadow: 0px 0px 7px;
 }

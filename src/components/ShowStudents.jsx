@@ -49,8 +49,8 @@ export const ShowStudents = () => {
             <th>EMAIL</th>
             <th>GENDER</th>
             <th>AGE</th>
-            <th>10th Score</th>
-            <th>12th Score</th>
+            <th>high school Score</th>
+            <th>college score</th>
             <th>BRANCH</th>
           </tr>
         </thead>
