@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 export const ShowStudents = () => {
   const [data, setData] = useState([]);
 
-
- 
   const getData = () => {
     fetch("http://localhost:8080/students")
       .then((response) => response.json())
@@ -12,7 +10,7 @@ export const ShowStudents = () => {
 
   useEffect(() => {
     getData();
-  },[]);
+  }, []);
 
   // console.log(data);
   return (
@@ -22,9 +20,9 @@ export const ShowStudents = () => {
           Sort By:{" "}
           <select
             // select dropdown needs both value and onChange
-            className="sortby" 
+            className="sortby"
           >
-            <option value="first_name">First Name</option>
+            <option value="first_name">FIRST NAME</option>
             <option value="gender">Gender</option>
             <option value="age">Age</option>
             <option value="tenth_score">10th Score</option>
@@ -46,21 +44,19 @@ export const ShowStudents = () => {
       <table className="table" id="tabledata">
         <thead>
           <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Gender</th>
-            <th>Age</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+            <th>GENDER</th>
+            <th>AGE</th>
             <th>10th Score</th>
             <th>12th Score</th>
-            <th>Branch</th>
+            <th>BRANCH</th>
           </tr>
         </thead>
-         {/* populate all rows like below: */}
-         <tbody className="tbody">
-
-          {
-          data.map((e) => (
+        {/* populate all rows like below: */}
+        <tbody className="tbody">
+          {data.map((e) => (
             <tr className="row">
               <td className="first_name">{e.first_name}</td>
               <td className="last_name">{e.last_name}</td>
@@ -73,13 +69,7 @@ export const ShowStudents = () => {
             </tr>
           ))}
         </tbody>
-
-
-
-         
       </table>
-
-   
     </div>
   );
 };
